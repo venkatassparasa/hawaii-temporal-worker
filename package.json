@@ -1,0 +1,22 @@
+{
+  "name": "hawaii-temporal-worker",
+  "version": "1.0.0",
+  "description": "Temporal Worker for Hawaii Compliance Dashboard",
+  "main": "worker.js",
+  "scripts": {
+    "start": "node worker.js",
+    "dev": "nodemon worker.js"
+  },
+  "dependencies": {
+    "@temporalio/worker": "^1.14.1",
+    "@temporalio/client": "^1.14.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
