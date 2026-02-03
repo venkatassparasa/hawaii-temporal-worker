@@ -1,6 +1,6 @@
 {
   "name": "hawaii-temporal-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Temporal Worker for Hawaii Compliance Dashboard",
   "main": "start.js",
   "scripts": {
