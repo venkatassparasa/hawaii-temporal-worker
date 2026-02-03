@@ -4,10 +4,11 @@
   "description": "Temporal Worker for Hawaii Compliance Dashboard",
   "main": "start.js",
   "scripts": {
-    "start": "node worker-simple.js",
-    "dev": "nodemon worker-simple.js",
+    "start": "node worker-enhanced.js",
+    "dev": "nodemon worker-enhanced.js",
     "start:real": "node worker.js",
-    "start:mock": "node worker-mock.js"
+    "start:mock": "node worker-mock.js",
+    "start:simple": "node worker-simple.js"
   },
   "dependencies": {
     "@temporalio/worker": "^1.10.3",
