@@ -1,5 +1,5 @@
 const { Worker } = require('@temporalio/worker');
-const activities = require('./activities');
+const activities = require('./activities/index.js');
 require('dotenv').config();
 
 async function runWorker() {
@@ -12,7 +12,7 @@ async function runWorker() {
     const worker = await Worker.create({
       namespace: process.env.TEMPORAL_NAMESPACE || 'default',
       taskQueue: process.env.TEMPORAL_TASK_QUEUE || 'tvr-compliance-queue',
-      workflowsPath: require.resolve('./workflows'),
+      workflowsPath: require.resolve('./workflows/index.js'),
       activities,
       connection: {
         address: process.env.TEMPORAL_ADDRESS || 'localhost:7233',

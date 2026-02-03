@@ -1,5 +1,5 @@
 const { sleep } = require('@temporalio/workflow');
-const activities = require('../activities');
+const activities = require('../activities/index.js');
 
 // TVR Registration Workflow
 async function TVRRegistrationWorkflow(application) {
