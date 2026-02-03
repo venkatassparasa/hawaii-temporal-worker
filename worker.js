@@ -14,6 +14,9 @@ async function runWorker() {
       taskQueue: process.env.TEMPORAL_TASK_QUEUE || 'tvr-compliance-queue',
       workflowsPath: require.resolve('./workflows'),
       activities,
+      connection: {
+        address: process.env.TEMPORAL_ADDRESS || 'localhost:7233',
+      },
     });
 
     console.log('✅ Worker started successfully, listening for tasks...');
