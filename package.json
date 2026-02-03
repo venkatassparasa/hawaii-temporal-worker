@@ -2,7 +2,7 @@
   "name": "hawaii-temporal-worker",
   "version": "1.0.0",
   "description": "Temporal Worker for Hawaii Compliance Dashboard",
-  "main": "worker.js",
+  "main": "start.js",
   "scripts": {
     "start": "node worker.js",
     "dev": "nodemon worker.js"
